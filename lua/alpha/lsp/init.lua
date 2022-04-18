@@ -3,9 +3,9 @@ if not status_ok then
   return
 end
 
-require ("user.lsp.lsp-installer")
-require("user.lsp.handlers").setup()
-require ("user.lsp.null-ls")
+require ("alpha.lsp.lsp-installer")
+require("alpha.lsp.handlers").setup()
+require ("alpha.lsp.null-ls")
 
 require('lspkind').setup({
   -- Defines how annotations are shown,
