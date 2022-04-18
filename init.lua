@@ -10,8 +10,6 @@ require("whichkey-config")
 require("impatient-config")
 require("gitsigns-config")
 
-
-
 require("settings")
 require("mappings")
 
