@@ -8,7 +8,7 @@ require("telescope-config")
 require("toggleterm-config")
 require("whichkey-config")
 require("impatient-config")
-
+require("gitsigns-config")
 
 
 
