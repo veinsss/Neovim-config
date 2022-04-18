@@ -8,3 +8,4 @@
 - auto cmp icons
 ## TO-DO list
 - comment plugins
+- kill toggle term when it closes
