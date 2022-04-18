@@ -7,53 +7,52 @@ require ("alpha.lsp.lsp-installer")
 require("alpha.lsp.handlers").setup()
 require ("alpha.lsp.null-ls")
 
-require('lspkind').setup({
-  -- Defines how annotations are shown,
-  -- can be 'text', 'text_symbol', 'symbol' or 'symbol_text'
-  -- default: symbol_text
-  mode = 'symbol_text',
+require('lspkind').init({
+    -- DEPRECATED (use mode instead): enables text annotations
+    --
+    -- default: true
+    -- with_text = true,
 
-  -- Symbols list can be a preset or a table with custom icons
-  -- 'default' and 'mdi' (requires nerd-fonts font) or
-  -- 'codicons' (requires vscode-codicons font)
-  -- No need to worry about the order as this is managed by the plugin
-  -- default: 'default'
-  symbols = 'default',
-  -- or override preset symbols
-  symbols = {
-    Text = '',
-    Method = '',
-    Function = '',
-    Constructor = '',
-    Field = 'ﰠ',
-    Variable = '',
-    Class = 'ﴯ',
-    Interface = '',
-    Module = '',
-    Property = 'ﰠ',
-    Unit = '塞',
-    Value = '',
-    Enum = '',
-    Keyword = '',
-    Snippet = '',
-    Color = '',
-    File = '',
-    Reference = '',
-    Folder = '',
-    EnumMember = '',
-    Constant = '',
-    Struct = 'פּ',
-    Event = '',
-    Operator = '',
-    TypeParameter = '',
-    Namespace = '',
-    Package = '',
-    String = '',
-    Number = '',
-    Boolean = '',
-    Array = '',
-    Object = '',
-    Key = '',
-    Null = 'ﳠ',
-  },
+    -- defines how annotations are shown
+    -- default: symbol
+    -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
+    mode = 'symbol_text',
+
+    -- default symbol map
+    -- can be either 'default' (requires nerd-fonts font) or
+    -- 'codicons' for codicon preset (requires vscode-codicons font)
+    --
+    -- default: 'default'
+    preset = 'codicons',
+
+    -- override preset symbols
+    --
+    -- default: {}
+    symbol_map = {
+      Text = "",
+      Method = "",
+      Function = "",
+      Constructor = "",
+      Field = "ﰠ",
+      Variable = "",
+      Class = "ﴯ",
+      Interface = "",
+      Module = "",
+      Property = "ﰠ",
+      Unit = "塞",
+      Value = "",
+      Enum = "",
+      Keyword = "",
+      Snippet = "",
+      Color = "",
+      File = "",
+      Reference = "",
+      Folder = "",
+      EnumMember = "",
+      Constant = "",
+      Struct = "פּ",
+      Event = "",
+      Operator = "",
+      TypeParameter = ""
+    },
 })
