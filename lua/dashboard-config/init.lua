@@ -51,5 +51,5 @@ vim.g.dashboard_custom_section =
 
 vim.g.dashboard_custom_footer = 
 {
-	"are you going to just config all day or start doing some prompts?"
+	"stop ricing and start coding"
 }

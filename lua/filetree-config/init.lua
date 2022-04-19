@@ -28,9 +28,18 @@ require'nvim-tree'.setup
       },
     },
   },
-  hijack_directories = {
-    enable = true,
-    auto_open = true,
+  renderer = {
+    indent_markers = {
+      enable = false,
+      icons = {
+        corner = "└ ",
+        edge = "│ ",
+        none = "  ",
+      },
+    },
+    icons = {
+      webdev_colors = true,
+    },
   },
   update_focused_file = {
     enable = true,

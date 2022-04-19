@@ -6,11 +6,14 @@ local keymap = vim.api.nvim_set_keymap
 keymap('i', 'jk', '<Esc>', {})
 keymap('n', '<Leader>h', '0', {})
 keymap('n', '<Leader>l', '$',{})
---bufferline
-keymap('n', '<C-tab>', ':BufferLineCycleNext<CR>', {})
+
 --filetree
 keymap("n", "<Leader>f", ":NvimTreeToggle<CR>", {})
+-- buffers
+keymap("n", "<C-tab>", ":BufferLineCycleNext<CR>", {})
+keymap("n", "<C-w>", ":BufferLinePickClose<CR>", {})
 -- transfering to buffers
+
 vim.cmd[[
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
@@ -37,5 +40,3 @@ vim.api.nvim_set_keymap("n", "<leader>11", "<cmd>Trouble<cr>",
 vim.api.nvim_set_keymap("n", "<leader>12", "<cmd>TroubleClose<cr>",
   {silent = true, noremap = true}
 )
--- switching buffers 
-keymap("n","<C-tab>",':BufferLineCycleNext<CR>',{})

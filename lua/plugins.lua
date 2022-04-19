@@ -45,7 +45,6 @@ return packer.startup(function(use) -- My plugins here
   use "glepnir/dashboard-nvim" -- dashboard thing
   use "norcalli/nvim-colorizer.lua" -- color thing
   --use 'jiangmiao/auto-pairs' -- pairs
-  use "onsails/lspkind.nvim"
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
@@ -72,7 +71,8 @@ return packer.startup(function(use) -- My plugins here
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
-
+  use "onsails/lspkind.nvim"
+  
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
