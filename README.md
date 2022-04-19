@@ -6,3 +6,6 @@
 - Syntax Highlitghting
 - auto complete - credit to chris@machine
 - auto cmp icons
+## TO-DO list
+- comment plugins
+- kill toggle term when it closes
