@@ -108,6 +108,10 @@ return packer.startup(function(use) -- My plugins here
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- autosave plugin
+  use "Pocco81/AutoSave.nvim"
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

@@ -1,17 +1,19 @@
 require("autopairs-config")
+require("autosave-config")
 require("bufferline-config")
 require("dashboard-config")
 require("filetree-config")
+require("gitsigns-config")
+require("impatient-config")
 require("indentblankline-config")
 require("lualine-config")
 require("telescope-config")
 require("toggleterm-config")
 require("whichkey-config")
-require("impatient-config")
-require("gitsigns-config")
 
 require("settings")
 require("mappings")
+require("utilities")
 
 --dont touch 
 require ("alpha.cmp")
