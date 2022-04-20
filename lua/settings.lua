@@ -21,6 +21,7 @@ opt.completeopt = {"menuone","noselect"}
 opt.hlsearch = true
 opt.pumheight = 10
 opt.cursorline = true
+opt.showmatch = true
 ---
 
 -- tabs and indents

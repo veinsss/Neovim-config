@@ -10,6 +10,7 @@ require("lualine-config")
 require("telescope-config")
 require("toggleterm-config")
 require("whichkey-config")
+require("treesitter-config")
 
 require("settings")
 require("mappings")
