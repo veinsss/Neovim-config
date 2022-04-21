@@ -44,7 +44,8 @@ vim.g.dashboard_custom_section =
 	b = {description = {'       Search Text        '}, command = 'Telescope live_grep'},
     c = {description = {'       New file           '}, command = ':startinsert <CR>'},
 	e = {description = {'       File Browser       '}, command = 'Telescope file_browser'},
-    d = {description = {'       Config             '}, command = 'edit ~/.config/nvim/init.lua'}
+    d = {description = {'       Change Theme       '}, command = ':Telescope colorscheme'},
+    f = {description = {'       Config             '}, command = 'edit ~/.config/nvim/init.lua'}
 
 }
 

@@ -16,7 +16,7 @@ require("settings")
 require("mappings")
 require("utilities")
 
---dont touch 
+--dont touch
 require ("alpha.cmp")
 require ("alpha.lsp")
 require ("plugins")
