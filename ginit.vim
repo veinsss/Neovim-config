@@ -4,3 +4,5 @@ GuiFont! CaskaydiaCove Nerd Font:h13
 
 GuiTabline 0
 GuiPopupmenu 0
+
+set termguicolors
