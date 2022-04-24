@@ -10,7 +10,7 @@ keymap('n', '<Leader>l', '$',{})
 --filetree
 keymap("n", "<Leader>f", ":NvimTreeToggle<CR>", {})
 -- buffers
-keymap("n", "<C-tab>", ":BufferLineCycleNext<CR>", {})
+keymap("n", "<C-]>", ":BufferLineCycleNext<CR>", {})
 keymap("n", "<C-w>", ":BufferLinePickClose<CR>", {})
 -- transfering to buffers
 
@@ -32,7 +32,7 @@ vim.api.nvim_set_keymap(
   { noremap = true }
 )
 -- telescope filebrowser
-vim.api.nvim_set_keymap("n","<Leader>gh",":Telescope file_browser theme=dropdown<Enter>",{noremap = true})
+vim.api.nvim_set_keymap("n","<Leader>gh",":Telescope file_browser theme=dropdown <Enter>",{noremap = true})
 -- trouble list
 vim.api.nvim_set_keymap("n", "<leader>11", "<cmd>Trouble<cr>",
   {silent = true, noremap = true}
