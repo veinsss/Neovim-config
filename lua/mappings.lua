@@ -10,19 +10,19 @@ keymap('n', '<Leader>l', '$',{})
 --filetree
 keymap("n", "<Leader>f", ":NvimTreeToggle<CR>", {})
 -- buffers
-keymap("n", "<C-tab>", ":BufferLineCycleNext<CR>", {})
+keymap("n", "<C-]>", ":BufferLineCycleNext<CR>", {})
 keymap("n", "<C-w>", ":BufferLinePickClose<CR>", {})
 -- transfering to buffers
 
 vim.cmd[[
-tnoremap <A-h> <C-\><C-n><C-w>h
-tnoremap <A-j> <C-\><C-n><C-w>j
-tnoremap <A-k> <C-\><C-n><C-w>k
-tnoremap <A-l> <C-\><C-n><C-w>l
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 ]]
 -- telescope
 vim.api.nvim_set_keymap(
@@ -32,7 +32,7 @@ vim.api.nvim_set_keymap(
   { noremap = true }
 )
 -- telescope filebrowser
-vim.api.nvim_set_keymap("n","<Leader>gh",":Telescope file_browser <Enter>",{noremap = true})
+vim.api.nvim_set_keymap("n","<Leader>gh",":Telescope file_browser theme=dropdown <Enter>",{noremap = true})
 -- trouble list
 vim.api.nvim_set_keymap("n", "<leader>11", "<cmd>Trouble<cr>",
   {silent = true, noremap = true}

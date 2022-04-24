@@ -1,5 +1,5 @@
 require("autopairs-config")
-require("autosave-config")
+--require("autosave-config")
 require("bufferline-config")
 require("dashboard-config")
 require("filetree-config")
