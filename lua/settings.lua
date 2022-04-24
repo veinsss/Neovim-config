@@ -12,6 +12,7 @@ opt.encoding = 'utf-8'
 ---
 
 --- UI
+opt.number = true
 opt.relativenumber = true
 opt.showmatch = true
 opt.termguicolors = true
@@ -28,6 +29,7 @@ opt.showmatch = true
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.tabstop = 4
+opt.softtabstop = 4
 opt.smartindent = true
 --
 
